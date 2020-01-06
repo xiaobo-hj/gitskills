@@ -6,6 +6,6 @@ public class HashTets {
         HashMap<String,String> hashMap = new HashMap<>();
         hashMap.put("1","1");
         hashMap.put("2","2");
-
+	dev_yanxiaoboĞŞ¸Ä
     }
 }
