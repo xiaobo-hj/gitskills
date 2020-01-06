@@ -1,0 +1,18 @@
+﻿查看端口占用:lsof -i:端口号
+杀掉进程:kill -9 PID
+后台运行jar包:nohup java -jar XXX>temp.txt &
+根据端口查看进程的pid:netstat -lnp|grep 端口号   -->  返回进程的pid  如果要停掉 直接kill -9
+查看指定进程信息：ps -ef | grep java      查看java进程信息
+删除文件：rm -f 文件名
+删除文件夹：rm -rf 文件夹名（文件夹和下面的文件都会删除）
+
+
+
+
+
+****************Redis**********************
+启动redis:./redis-server
+以配置问价启动:./redis-server redis.conf
+启动AOF数据同步:redis.conf 修改  appendonly no  -->yes
+修复appendonly.aof:redis-check-aof --fix appendonly.aof
+redis设置密码：redis.conf修改requirepass password  重启redis服务即可     下次登录redis客户端 ./redis-cli -a password
